@@ -1,1 +1,0 @@
-export default function Delivery() { return <div className='p-4'>Доставка и Оплата</div>; }
