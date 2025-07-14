@@ -11,27 +11,33 @@ export default function Home() {
         <title>DachaLine — мебель для дачи и дома</title>
       </Head>
 
-      <main className="max-w-6xl mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-4">Добро пожаловать в DachaLine</h1>
-        <p className="mb-8">Мебель из ротанга и товары для дачи и дома</p>
+      {/* ✅ Убрали ограничение ширины и отступы */}
+      <main className="w-full py-8">
 
+        <div className="w-full text-center mb-6">
+          <h1 className="text-4xl font-bold mb-2">Добро пожаловать в DachaLine</h1>
+          <p className="text-lg">Мебель из ротанга и товары для дачи и дома</p>
+        </div>
+
+        {/* ✅ Баннер на всю ширину */}
         <Image
-  src="/images/banner.jpg"
-  width={1200}
-  height={500}
-  className="rounded-xl shadow-md w-full mb-10"
-/>
+          src="/images/banner.jpg"
+          width={1920}
+          height={600}
+          alt="Баннер магазина"
+          className="w-full object-cover mb-10"
+        />
 
         {/* Каталог товаров */}
-        <h2 className="text-2xl font-semibold mb-4">Каталог товаров</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
+        <h2 className="text-3xl font-semibold mb-4 px-4">Каталог товаров</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10 px-4">
           {[1, 2, 3].map((id) => (
             <div key={id} className="border p-4 rounded-xl shadow hover:shadow-lg transition">
               <Image
                 src={`/images/product${id}.jpg`}
                 alt={`Товар ${id}`}
-                width={400}
-                height={300}
+                width={600}
+                height={400}
                 className="mb-2 rounded"
               />
               <h3 className="text-lg font-medium">Товар {id}</h3>
@@ -42,15 +48,15 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Слайдер с достижениями */}
-        <h2 className="text-2xl font-semibold mb-4">Наши достижения</h2>
-        <Swiper spaceBetween={10} slidesPerView={2}>
+        {/* Достижения */}
+        <h2 className="text-3xl font-semibold mb-4 px-4">Наши достижения</h2>
+        <Swiper spaceBetween={10} slidesPerView={2} className="px-4">
           <SwiperSlide>
             <Image
               src="/images/award1.jpg"
               alt="Грамота 1"
-              width={600}
-              height={400}
+              width={800}
+              height={500}
               className="rounded-xl shadow-md w-full"
             />
           </SwiperSlide>
@@ -58,12 +64,13 @@ export default function Home() {
             <Image
               src="/images/award2.jpg"
               alt="Грамота 2"
-              width={600}
-              height={400}
+              width={800}
+              height={500}
               className="rounded-xl shadow-md w-full"
             />
           </SwiperSlide>
         </Swiper>
+
       </main>
     </Layout>
   )
