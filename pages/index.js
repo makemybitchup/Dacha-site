@@ -17,10 +17,22 @@ export default function Home() {
         {/* Слайдер с фото магазина */}
         <Swiper spaceBetween={10} slidesPerView={1} className="mb-10">
           <SwiperSlide>
-            <img src="/images/store1.jpg" alt="Фото магазина 1" className="rounded-xl shadow-md w-full" />
+            <Image
+              src="/images/store1.jpg"
+              alt="Фото магазина 1"
+              width={800}
+              height={500}
+              className="rounded-xl shadow-md w-full"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/images/store2.jpg" alt="Фото магазина 2" className="rounded-xl shadow-md w-full" />
+            <Image
+              src="/images/store2.jpg"
+              alt="Фото магазина 2"
+              width={800}
+              height={500}
+              className="rounded-xl shadow-md w-full"
+            />
           </SwiperSlide>
         </Swiper>
 
@@ -29,7 +41,13 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
           {[1, 2, 3].map((id) => (
             <div key={id} className="border p-4 rounded-xl shadow hover:shadow-lg transition">
-              <img src={`/images/product${id}.jpg`} alt={`Товар ${id}`} className="mb-2 rounded" />
+              <Image
+                src={`/images/product${id}.jpg`}
+                alt={`Товар ${id}`}
+                width={400}
+                height={300}
+                className="mb-2 rounded"
+              />
               <h3 className="text-lg font-medium">Товар {id}</h3>
               <p className="text-sm text-gray-500">Описание товара {id}</p>
               <p className="font-bold mt-1">Цена: 9990 ₽</p>
@@ -42,10 +60,22 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-4">Наши достижения</h2>
         <Swiper spaceBetween={10} slidesPerView={2}>
           <SwiperSlide>
-            <img src="/images/award1.jpg" alt="Грамота 1" className="rounded-xl shadow-md w-full" />
+            <Image
+              src="/images/award1.jpg"
+              alt="Грамота 1"
+              width={600}
+              height={400}
+              className="rounded-xl shadow-md w-full"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/images/award2.jpg" alt="Грамота 2" className="rounded-xl shadow-md w-full" />
+            <Image
+              src="/images/award2.jpg"
+              alt="Грамота 2"
+              width={600}
+              height={400}
+              className="rounded-xl shadow-md w-full"
+            />
           </SwiperSlide>
         </Swiper>
       </main>
