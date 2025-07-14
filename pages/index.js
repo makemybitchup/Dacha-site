@@ -17,7 +17,6 @@ export default function Home() {
 
         <Image
   src="/images/banner.jpg"
-  alt="Баннер магазина"
   width={1200}
   height={500}
   className="rounded-xl shadow-md w-full mb-10"
