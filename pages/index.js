@@ -49,27 +49,29 @@ export default function Home() {
         </div>
 
         {/* Достижения */}
-        <h2 className="text-3xl font-semibold mb-4 px-4">Наши достижения</h2>
-        <Swiper spaceBetween={10} slidesPerView={2} className="px-4">
-          <SwiperSlide>
-            <Image
-              src="/images/award1.jpg"
-              alt="Грамота 1"
-              width={800}
-              height={500}
-              className="rounded-xl shadow-md w-full"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src="/images/award2.jpg"
-              alt="Грамота 2"
-              width={800}
-              height={500}
-              className="rounded-xl shadow-md w-full"
-            />
-          </SwiperSlide>
-        </Swiper>
+        <div className="max-w-5xl mx-auto px-4">
+  <h2 className="text-2xl font-semibold mb-4">Наши достижения</h2>
+  <Swiper spaceBetween={10} slidesPerView={1} breakpoints={{ 768: { slidesPerView: 2 } }}>
+    <SwiperSlide>
+      <Image
+        src="/images/award1.jpg"
+        alt="Грамота 1"
+        width={800}
+        height={500}
+        className="rounded-xl shadow-md w-full"
+      />
+    </SwiperSlide>
+    <SwiperSlide>
+      <Image
+        src="/images/award2.jpg"
+        alt="Грамота 2"
+        width={800}
+        height={500}
+        className="rounded-xl shadow-md w-full"
+      />
+    </SwiperSlide>
+  </Swiper>
+</div>
 
       </main>
     </Layout>
