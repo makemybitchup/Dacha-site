@@ -50,8 +50,8 @@ export default function Home() {
 
         {/* Достижения */}
         <div className="max-w-5xl mx-auto px-4">
-  <h2 className="text-2xl font-semibold mb-4">Наши достижения</h2>
-  <Swiper spaceBetween={10} slidesPerView={1} breakpoints={{ 768: { slidesPerView: 2 } }}>
+ <h2 className="text-3xl font-bold text-center mb-6">Наши достижения</h2>
+ <Swiper spaceBetween={10} slidesPerView={1} breakpoints={{ 768: { slidesPerView: 2 } }}>
     <SwiperSlide>
       <Image
         src="/images/award1.jpg"
