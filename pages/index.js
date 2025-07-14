@@ -15,27 +15,13 @@ export default function Home() {
         <h1 className="text-3xl font-bold mb-4">Добро пожаловать в DachaLine</h1>
         <p className="mb-8">Мебель из ротанга и товары для дачи и дома</p>
 
-        {/* Слайдер с фото магазина */}
-        <Swiper spaceBetween={10} slidesPerView={1} className="mb-10">
-          <SwiperSlide>
-            <Image
-              src="/images/store1.jpg"
-              alt="Фото магазина 1"
-              width={800}
-              height={500}
-              className="rounded-xl shadow-md w-full"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src="/images/store2.jpg"
-              alt="Фото магазина 2"
-              width={800}
-              height={500}
-              className="rounded-xl shadow-md w-full"
-            />
-          </SwiperSlide>
-        </Swiper>
+        <Image
+  src="/images/banner.jpg"
+  alt="Баннер магазина"
+  width={1200}
+  height={500}
+  className="rounded-xl shadow-md w-full mb-10"
+/>
 
         {/* Каталог товаров */}
         <h2 className="text-2xl font-semibold mb-4">Каталог товаров</h2>
