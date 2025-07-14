@@ -1,3 +1,4 @@
+import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -5,7 +6,7 @@ import 'swiper/css'
 
 export default function Home() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>DachaLine — мебель для дачи и дома</title>
       </Head>
@@ -79,6 +80,6 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
       </main>
-    </>
+    </Layout>
   )
 }
